@@ -36,7 +36,7 @@ jobs:
           tag: ${{ github.ref }}
           overwrite: true
           file_glob: true
-          file: build/linux/*
+          file: OpenRA-OW2023-02-25/build/linux/*
 
   macos:
     name: macOS Disk Image
@@ -73,7 +73,7 @@ jobs:
           tag: ${{ github.ref }}
           overwrite: true
           file_glob: true
-          file: build/macos/*
+          file: OpenRA-OW2023-02-25/build/macos/*
 
   windows:
     name: Windows Installers
@@ -107,4 +107,4 @@ jobs:
           tag: ${{ github.ref }}
           overwrite: true
           file_glob: true
-          file: build/windows/*
+          file: OpenRA-OW2023-02-25/build/windows/*
