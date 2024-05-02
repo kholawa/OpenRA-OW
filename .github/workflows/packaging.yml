@@ -23,6 +23,7 @@ jobs:
 
       - name: Package AppImage
         run: |
+          cd OpenRA-OW2023-02-25
           make engine
           mkdir -p build/linux
           sudo apt install libfuse2
@@ -60,6 +61,7 @@ jobs:
           MACOS_DEVELOPER_USERNAME: ${{ secrets.MACOS_DEVELOPER_USERNAME }}
           MACOS_DEVELOPER_PASSWORD: ${{ secrets.MACOS_DEVELOPER_PASSWORD }}
         run: |
+          cd OpenRA-OW2023-02-25
           make engine
           mkdir -p build/macos
           ./packaging/macos/buildpackage.sh "${GIT_TAG}" "${PWD}/build/macos"
@@ -93,6 +95,7 @@ jobs:
 
       - name: Package Installers
         run: |
+          cd OpenRA-OW2023-02-25
           make engine
           mkdir -p build/windows
           ./packaging/windows/buildpackage.sh "${GIT_TAG}" "${PWD}/build/windows"
