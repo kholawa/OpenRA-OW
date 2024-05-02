@@ -1,6 +1,10 @@
+user.config
+engine
+*.dll
+
 # Visual Studio
 Release
-engine
+bin
 obj
 *.ncb
 *.vcproj*
@@ -12,13 +16,9 @@ obj
 *.lastcodeanalysissucceeded
 _ReSharper.*/
 /.vs
-mods/ow/rules2
 
 # Visual Studio Code
 /.vscode/settings.json
-
-# binaries
-IP2LOCATION-LITE-DB1.IPV6.BIN.ZIP
 
 # backup files by various editors
 *~
@@ -32,15 +32,6 @@ IP2LOCATION-LITE-DB1.IPV6.BIN.ZIP
 
 # Mac OS X
 .DS_Store
-
-# auto-generated documentation
-DOCUMENTATION.md
-WEAPONS.md
-Lua-API.md
-Settings.md
-*.html
-openra.6
-update.log
 
 # SublimeText
 *.sublime-project
