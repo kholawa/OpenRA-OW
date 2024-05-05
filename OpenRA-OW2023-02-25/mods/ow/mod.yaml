@@ -13,8 +13,8 @@ Packages:
 	~^SupportDir|Content/ra/v2/cnc
 	~^SupportDir|Content/ra/v2/movies
 	^EngineDir
-	$ra: ra
 	$ow: ow
+	^EngineDir|mods/ra: ra
 	^EngineDir|mods/common: common
 	~main.mix
 	~conquer.mix
